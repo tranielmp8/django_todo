@@ -17,7 +17,7 @@ import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DATABASE_URL=config('MYSQL_CONNECT')
+DATABASE_URL=config('POSTGRES_KEY')
 
 
 # Quick-start development settings - unsuitable for production
