@@ -19,6 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 DATABASE_URL=config('POSTGRES_KEY')
 
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -30,6 +31,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['djangotodo-production-5fdb.up.railway.app', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS=['https://djangotodo-production-5fdb.up.railway.app']
 
 
 # Application definition
